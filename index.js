@@ -8,7 +8,7 @@ var app = module.exports = require('lib/boot');
 var debug = require('debug')('njs');
 
 /**
- * Launch server
+ * Launch http server on any port
  */
 
 http.createServer(app).listen(app.get('port'), function() {
